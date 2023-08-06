@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import lottie from "lottie-web";
 import reactLogo from "../component/static/animation_lkznporc.json";
 
@@ -12,7 +13,7 @@ export default function Main() {
       autoplay: true, // boolean
     });
     return () => {
-      anim.destroy(); // Cleanup the animation when the component unmounts
+      anime.destroy(); // Cleanup the animation when the component unmounts
     };
   }, []);
 
