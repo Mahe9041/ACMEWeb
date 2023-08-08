@@ -1,0 +1,64 @@
+/* the main section where the page begins..*/
+
+
+
+.mainBlock{
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 2vh;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.Main_look{
+    height: 85vh;
+    width: 100%;
+    display: flex;;
+    flex-direction: row;
+    /* padding: 1vh; */
+    justify-content: center;
+    align-items: center;
+}
+
+.Main_look_content{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 0 0 10rem;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Karla', sans-serif;
+    font-weight: 900;
+}
+
+.Main_look_content .m{
+    margin: 0;
+    padding: .5rem;
+}
+
+.Main_look_content h1{
+    font-size: 10rem;
+}
+
+.Main_look_content h3{
+    font-size: 2rem;
+}
+
+.Main_look_content p{
+    font-size: 1.5rem;
+}
+
+.Main_look #Rocket{
+    position :relative;
+    /* width: 60vw; */
+    height: auto;
+}
