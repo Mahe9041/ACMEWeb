@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from 'react-router-dom';
 import { useEffect } from "react";
 import lottie from "lottie-web";
-import reactLogo from "../component/static/animation_lkznporc.json";
+import reactLogo from "../component/static/animations/animation_lkznporc.json";
 
 export default function Main() {
   useEffect(() => {
