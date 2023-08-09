@@ -1,26 +1,13 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-import { useEffect } from "react";
-import lottie from "lottie-web";
 import reactLogo from "../component/static/animations/animation_lkznporc.json";
+import Lot from "./lot";
 
 export default function Main() {
-  useEffect(() => {
-    const anime = lottie.loadAnimation({
-      container: document.querySelector("#Rocket"),
-      animationData: reactLogo,
-      renderer: "svg", // "canvas", "html"
-      loop: true, // boolean
-      autoplay: true, // boolean
-    });
-    return () => {
-      anime.destroy(); // Cleanup the animation when the component unmounts
-    };
-  }, []);
 
   return (
     <div className="mainBlock">
-      <nav>
+      <nav className="navv">
         <ul>
           <li>
           Home
@@ -46,7 +33,10 @@ export default function Main() {
           <h3 className="m">Science and Cultural Society for ECE department.</h3>
           <p className="m">A one stop place for all ACME related activites........</p>
         </div>
-        <div id="Rocket" />
+        <Lot className="rocket"
+        data={reactLogo}
+        idd="rocky"
+        ></Lot>
       </div>
     </div>
   );

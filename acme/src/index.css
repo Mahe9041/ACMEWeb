@@ -3,7 +3,15 @@
     font-family: 'Karla', sans-serif;
 }
 
+ul,li{
+    list-style: none;   
+}
+
 /* the main section where the page begins..*/
+
+.navv{
+    height: 15vh;
+}
 
 .mainBlock{
     display: flex;
@@ -14,12 +22,12 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    list-style: none;
+    /* list-style: none; */
 }
 
 nav ul li{
     margin: 2vh;
-    list-style: none;
+    /* list-style: none; */
     font-size: 1.5rem;
 }
 
@@ -37,8 +45,15 @@ nav ul li{
     display: flex;
     flex-direction: column;
     margin: 0;
+    justify-content: center;
+    /* align-items: center; */
     padding: 0 0 0 10rem;
-    font-weight: 900;
+    /* font-weight: 900; */
+    width: 45vw;
+}
+
+.rocket{
+    width: 45vw;
 }
 
 .Main_look_content .m{
@@ -58,8 +73,54 @@ nav ul li{
     font-size: 1.5rem;
 }
 
-.Main_look #Rocket{
-    position :relative;
+/* .Main_look #id{
+    /* position :relative; */
     /* width: 60vw; */
-    height: auto;
+    /* height: auto; */
+/* } */
+
+/* now the below styles are all for the second block i.e clubs */
+
+.club_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.club_wrapper h1{
+    font-size: 4rem;
+}
+
+.club_main_wrapper{
+    display: flex;;
+    flex-direction: row;
+}
+
+.club_list{
+    display: flex;
+    width: 45vw;
+    height: 400vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.club_list ul li{
+    font-size: 2.5rem;
+}
+
+.club_content{
+    width: 45vw;
+}
+
+.club_card{
+    height: 100vh;
+}
+
+.club_card h1{
+    font-size: 2.5rem;
+}
+
+.club_card p{
+    font-size: 1.5rem;
 }
