@@ -18,6 +18,6 @@ export default function Lot(prop){
       }, []);
 
       return(
-        <div id={prop.idd} />
+        <div className="lottie_animation"id={prop.idd} />
       )
 }
