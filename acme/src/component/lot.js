@@ -11,6 +11,12 @@ export default function Lot(prop){
           renderer: "svg", // "canvas", "html"
           loop: true, // boolean
           autoplay: true, // boolean
+          rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice', // Adjust the preserveAspectRatio as needed
+          },
+          style:{
+            height:'20px'
+          }
         });
         return () => {
           anime.destroy(); // Cleanup the animation when the component unmounts

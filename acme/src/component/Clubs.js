@@ -1,13 +1,32 @@
-import React from "react";
+import React,{useEffect} from "react";
 import tech from "../component/static/animations/animation_ll3fkeic.json";
 import sport from "../component/static/animations/144026-lifestyle-of-when-weighing-gym.json";
 import com from "../component/static/animations/94548-community.json";
 import yc from "../component/static/animations/118925-helping-in-need.json";
-import Lot from "./lot";
 import Card from "./Card";
+import ScrollMagic from "scrollmagic"
 
 
-export default function Clubs() {
+function Clubs(){
+
+  function splitScroll(){
+    const controller = new ScrollMagic.Controller();
+  
+  
+    new ScrollMagic.Scene({
+      duration : '100%',
+      triggerElement:'.club_list',
+      triggerHook:0
+    })
+    .setPin('.club_list')
+    .addIndicators()
+    .addTo(controller)
+  } 
+
+  useEffect(()=>{
+    splitScroll();
+  },[])
+
   return (
     <div className="club_wrapper">
       <h1>Clubs</h1>
@@ -67,3 +86,4 @@ export default function Clubs() {
     </div>
   );
 }
+export default Clubs;

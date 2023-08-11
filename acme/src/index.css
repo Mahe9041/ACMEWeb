@@ -1,6 +1,8 @@
 *{
     font-family: 'Pacifico', cursive;
     font-family: 'Karla', sans-serif;
+    padding : 0px;
+    margin : 0px;
 }
 
 ul,li{
@@ -86,6 +88,7 @@ nav ul li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 400vh;
 }
 
 .club_wrapper h1{
@@ -99,8 +102,8 @@ nav ul li{
 
 .club_list{
     display: flex;
-    width: 45vw;
-    height: 400vh;
+    width: 49vw;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
@@ -110,7 +113,7 @@ nav ul li{
 }
 
 .club_content{
-    width: 45vw;
+    width: 49vw;
 }
 
 .club_card{
@@ -119,8 +122,14 @@ nav ul li{
 
 .club_card h1{
     font-size: 2.5rem;
+    height: 10vh;
 }
 
 .club_card p{
     font-size: 1.5rem;
+    height : 30vh;
+}
+
+.club_card .lottie_animation{
+    height: 60vh;
 }
