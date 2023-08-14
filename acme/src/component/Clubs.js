@@ -4,35 +4,41 @@ import sport from "../component/static/animations/144026-lifestyle-of-when-weigh
 import com from "../component/static/animations/94548-community.json";
 import yc from "../component/static/animations/118925-helping-in-need.json";
 import Card from "./Card";
-import ScrollMagic from "scrollmagic"
+import ScrollMagic from 'scrollmagic';
+// import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators'; // Import the debug.addIndicators plugin
+
 
 
 function Clubs(){
 
-  function splitScroll(){
-    const controller = new ScrollMagic.Controller();
-  
-  
-    new ScrollMagic.Scene({
-      duration : '100%',
-      triggerElement:'.club_list',
-      triggerHook:0
-    })
-    .setPin('.club_list')
-    .addIndicators()
-    .addTo(controller)
-  } 
+  function splitScroll(e) {
+    const controller = e;
 
-  useEffect(()=>{
-    splitScroll();
-  },[])
+    new ScrollMagic.Scene({
+      duration: 2230,
+      triggerElement: ".club_list",
+      triggerHook: 0,
+    })
+      .setPin(".club_list")
+      // .addIndicators()
+      .addTo(controller);
+  }
+
+  useEffect(() => {
+    const controller = new ScrollMagic.Controller();
+    splitScroll(controller);
+  
+    return () => {
+      controller.destroy();
+    };
+  }, []);
 
   return (
     <div className="club_wrapper">
       <h1>Clubs</h1>
       <div className="club_main_wrapper">
         <div className="club_list">
-          <ul>
+          <ul className="scroll_start">
             <li>Sportio</li>
             <li>Communion</li>
             <li>Techno crats</li>

@@ -11,13 +11,15 @@ ul,li{
 
 /* the main section where the page begins..*/
 
-.navv{
-    height: 15vh;
-}
+/* .navv{
+    /* height: 15vh; */
+/* } */ */
 
 .mainBlock{
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    /* background-color: black; */
 }
 
 nav ul {
@@ -34,13 +36,13 @@ nav ul li{
 }
 
 .Main_look{
-    height: 85vh;
     width: 100%;
     display: flex;;
     flex-direction: row;
     /* padding: 1vh; */
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .Main_look_content{
@@ -54,9 +56,9 @@ nav ul li{
     width: 45vw;
 }
 
-.rocket{
+/* .rocket{
     width: 45vw;
-}
+} */
 
 .Main_look_content .m{
     margin: 0;
@@ -73,6 +75,10 @@ nav ul li{
 
 .Main_look_content p{
     font-size: 1.5rem;
+}
+
+#rocky{
+    height : 60vh;
 }
 
 /* .Main_look #id{
@@ -93,9 +99,11 @@ nav ul li{
 
 .club_wrapper h1{
     font-size: 4rem;
+    height: 20vh;
 }
 
 .club_main_wrapper{
+    height: 400vh;
     display: flex;;
     flex-direction: row;
 }
