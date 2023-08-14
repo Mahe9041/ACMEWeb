@@ -12,26 +12,24 @@ ul,li{
 /* the main section where the page begins..*/
 
 /* .navv{
-    /* height: 15vh; */
-/* } */ */
+    justify-content: center;
+    align-items: center;
+} */
 
 .mainBlock{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    /* background-color: black; */
 }
 
 nav ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* list-style: none; */
 }
 
 nav ul li{
     margin: 2vh;
-    /* list-style: none; */
     font-size: 1.5rem;
 }
 
@@ -39,7 +37,6 @@ nav ul li{
     width: 100%;
     display: flex;;
     flex-direction: row;
-    /* padding: 1vh; */
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -50,15 +47,9 @@ nav ul li{
     flex-direction: column;
     margin: 0;
     justify-content: center;
-    /* align-items: center; */
     padding: 0 0 0 10rem;
-    /* font-weight: 900; */
     width: 45vw;
 }
-
-/* .rocket{
-    width: 45vw;
-} */
 
 .Main_look_content .m{
     margin: 0;
@@ -76,16 +67,6 @@ nav ul li{
 .Main_look_content p{
     font-size: 1.5rem;
 }
-
-#rocky{
-    height : 60vh;
-}
-
-/* .Main_look #id{
-    /* position :relative; */
-    /* width: 60vw; */
-    /* height: auto; */
-/* } */
 
 /* now the below styles are all for the second block i.e clubs */
 
@@ -126,6 +107,10 @@ nav ul li{
 }
 
 .club_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
@@ -137,8 +122,12 @@ nav ul li{
 .club_card p{
     font-size: 1.5rem;
     height : 30vh;
+    width: 90%;
 }
 
 .club_card .lottie_animation{
     height: 60vh;
 }
+
+/* this is contact us styling */
+

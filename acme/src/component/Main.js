@@ -13,16 +13,16 @@ export default function Main() {
           Home
             {/* <Link to="/">Home</Link> */}
           </li>
-          <li>Home
+          <li>Clubs
             {/* <Link to="/">Clubs</Link> */}
           </li>
-          <li>Home
+          <li>Events Galary
             {/* <Link to="/">Contact Us</Link> */}
           </li>
-          <li>Home
+          <li>Contact Us
             {/* <Link to="/">Feedback</Link> */}
           </li>
-          <li>Home
+          <li>Feedback
             {/* <Link to="/">Galary</Link> */}
           </li>
         </ul>
