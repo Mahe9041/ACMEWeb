@@ -1,5 +1,6 @@
 import Main from "./Main";
 import Clubs from "./Clubs";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Main></Main>
       <Clubs
       ></Clubs>
+      <Contact/>
     </>
   );
 }
