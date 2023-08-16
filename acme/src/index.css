@@ -182,3 +182,12 @@ nav ul li{
 .radio{
     width: 2rem;
 }
+
+
+/* this section of css deals with feedback form  */
+
+/* remember that the feedback form is just a modified contact us from so most of styles have been inherited just few changes here and there are done. */
+
+#fb{
+    width: 60%;
+}
