@@ -195,7 +195,7 @@ nav ul li{
 /* this section is dedicated to footer of the website */
 
 .footer{
-    
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -209,4 +209,8 @@ nav ul li{
     height: 30vh;
     background-color: black;
     color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
