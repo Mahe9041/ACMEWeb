@@ -191,3 +191,17 @@ nav ul li{
 #fb{
     width: 60%;
 }
+
+/* this section is dedicated to footer of the website */
+
+.footer{
+    height: 50vh;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 0;
+}
