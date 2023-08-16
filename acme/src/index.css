@@ -169,7 +169,7 @@ nav ul li{
 .input{
     width: 100%;
     padding: .3rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .radio_btn{
@@ -195,13 +195,18 @@ nav ul li{
 /* this section is dedicated to footer of the website */
 
 .footer{
-    height: 50vh;
-    background-color: black;
-    color: aliceblue;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    font-size: 2rem;
+    align-items: flex-start;
+    font-size: 1.5rem;
     font-weight: 0;
+    padding: 40px 0 0 0 ;
+}
+
+.foot{
+    height: 30vh;
+    background-color: black;
+    color: aliceblue;
 }

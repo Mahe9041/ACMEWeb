@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
+    <div className="foot">
     <div className="footer">
       <div className="Social">
         <ul>
@@ -32,6 +33,8 @@ export default function Footer() {
       <div>
         <h6>login</h6>
       </div>
+    </div>
+    <h6>All rights reserved under ACME .&copy;</h6>
     </div>
   );
 }
