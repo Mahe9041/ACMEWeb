@@ -1,35 +1,73 @@
 import React from "react";
+import data from "./static/animations/contact.json";
 import Lot from "./lot";
-import animationdata from "./static/animations/90319-contact-us.json";
 
-export default function Contact() {
+export default function Demo() {
   return (
-    <div className="ContactUs">
-      <h1>Contact Us</h1>
-      <div className="Contact_rapper">
-        <Lot data={animationdata} idd={"cu"}></Lot>
-        <form className="contact_form">
-          <label className="label">First Name :</label>
-          <input type="text" className="input" placeholder="First Name"></input>
-          <label className="label">Last Name :</label>
-          <input type="text" className="input" placeholder="Last Name"></input>
+    <div className="contactRapper">
+      <div className="Bg_blur"></div>
+      <div className="Contact_form">
+        {/* <img src={data} /> */}
+        <Lot data={data} idd={"ch"}></Lot>
+        <div className="filling">
+          <h1>Contact us</h1>
+          <form className="Actual_form">
+            <div className="form_group field">
+              <input
+                type="input"
+                className="form_field"
+                placeholder="Frst Name"
+                id="fname"
+                required
+              ></input>
+              <label htmlFor="fname" className="form_label">
+                First Name
+              </label>
+            </div>
+            <div className="form_group field">
+              <input
+                type="input"
+                className="form_field"
+                placeholder="Last Name"
+                id="lname"
+                required
+              ></input>
+              <label htmlFor="lname" className="form_label">
+                Last Name
+              </label>
+            </div>
+            <div className="form_group field">
+              <input
+                type="email"
+                className="form_field"
+                placeholder="Email"
+                id="Emali"
+                required
+              ></input>
+              <label htmlFor="Email" className="form_label">
+                Email
+              </label>
+            </div>
+            <div className="year">
+              <label className="year_title">Year : </label>
 
-          <div className="radio_btn">
-          <label className="label">Year :</label>
-            <input type="radio" name="year" className="radio"></input>
-            <label className="label">4th</label>
-            <input type="radio" name="year" className="radio"></input>
-            <label className="label">3rd</label>
-            <input type="radio" name="year" className="radio"></input>
-            <label className="label">2nd</label>
-            <input type="radio" name="year" className="radio"></input>
-            <label className="label">1st</label>
-          </div>
-          <label className="label">Email Id :</label>
-          <input type="email" className="input" placeholder="Email Id"></input>
-          <label className="label">Message :</label>
-          <textarea className="input" placeholder="Message"></textarea>
-        </form>
+              <div className="dropdown">
+                <button className="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                  <p className="p0">First</p>
+                  <p className="p1">Second</p>
+                  <p className="p2">Third</p>
+                  <p className="p3">Forth</p>
+                </div>
+              </div>
+            </div>
+            <div className="msg">
+              <label className="msg_label">Message : </label>
+              <textarea className="textarea"></textarea>
+            </div>
+            <button className="dropbtn">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
   );
