@@ -1,32 +1,15 @@
 import React from "react";
-import {Link} from 'react-router-dom';
 import reactLogo from "../component/static/animations/animation_lkznporc.json";
 import Lot from "./lot";
+import Clubs from "./Clubs";
+import Contact from "./Contact";
+import Feedback from "./Feedback";
 
 export default function Main() {
 
   return (
+    <div>
     <div className="mainBlock">
-      <nav className="navv">
-        <ul>
-          <li>
-          Home
-            {/* <Link to="/">Home</Link> */}
-          </li>
-          <li>Clubs
-            {/* <Link to="/">Clubs</Link> */}
-          </li>
-          <li>Events Galary
-            {/* <Link to="/">Contact Us</Link> */}
-          </li>
-          <li>Contact Us
-            {/* <Link to="/">Feedback</Link> */}
-          </li>
-          <li>Feedback
-            {/* <Link to="/">Galary</Link> */}
-          </li>
-        </ul>
-      </nav>
       <div className="Main_look">
         <div className="Main_look_content">
           <h1 className="m">ACME</h1>
@@ -38,6 +21,10 @@ export default function Main() {
         idd="rocky"
         ></Lot>
       </div>
+    </div>
+    <Clubs></Clubs>
+    <Contact/>
+    <Feedback></Feedback>
     </div>
   );
 }

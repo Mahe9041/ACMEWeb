@@ -34,7 +34,7 @@ function Clubs(){
   }, []);
 
   return (
-    <div className="club_wrapper">
+    <div className="club_wrapper" id="clubs">
       <h1>Clubs</h1>
       <div className="club_main_wrapper">
         <div className="club_list">

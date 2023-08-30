@@ -1,17 +1,20 @@
+import React from "react";
 import Main from "./Main";
-import Clubs from "./Clubs";
-import Contact from "./Contact";
-import Feedback from "./Feedback";
 import Footer from "./Footer";
+import About from "./About";
+import Header from "./Header";
+// import { Routes,Route } from 'react-router-dom'
 
 function App() {
   return (
     <>
+      {/* <Header></Header> */}
       <Main></Main>
-      <Clubs
-      ></Clubs>
-      <Contact/>
-      <Feedback></Feedback>
+      {/* <Routes>
+        <Route path="/" element={<Main></Main>}></Route>
+        <Route path="/About" element={<About></About>}></Route>
+      </Routes> */}
+      
       <Footer></Footer>
     </>
   );

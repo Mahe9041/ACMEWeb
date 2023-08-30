@@ -4,7 +4,7 @@ import Lot from "./lot";
 
 export default function Demo() {
   return (
-    <div className="contactRapper">
+    <div className="contactRapper" id="feedback">
       <div className="Bg_blur fBg_blur"></div>
       <div className="Contact_form">
         {/* <img src={data} /> */}

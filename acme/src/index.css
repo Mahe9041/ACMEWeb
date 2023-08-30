@@ -385,3 +385,17 @@ nav ul li{
     justify-content: center;
     align-items: center;
 }
+
+/* This perticular section deals with the About Us page and also the section which is present at main page */
+
+.About{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About h1{
+    font-size: 4rem;
+    
+}
